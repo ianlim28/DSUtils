@@ -7,6 +7,7 @@ setup(name='dsutils',
       author='ianlim',
       author_email='ianlim28@hotmail.com',
       license='MIT',
-      packages=find_packages(where="src"),
+      #packages=find_packages(where="src"),
+      packages=find_packages(),
       package_dir={"": "src"},
       zip_safe=False)
