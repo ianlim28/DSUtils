@@ -180,6 +180,7 @@ def train_cats(df):
     """
     for n,c in df.items():
         if is_string_dtype(c): 
+            # converts the string to category, an ordered category ie a > b
             df[n] = c.astype('category').cat.as_ordered()
             
 def apply_cats(df, trn):
